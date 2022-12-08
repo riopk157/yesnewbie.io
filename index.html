@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vacation Door!</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  </head>
+
+  <body id="body">
+    
+    <div class="header" id="header">
+      <img id="logo" src="./Vacation_door.svg" alt="logo">
+    </div>
+
+    <div class="title-row">
+      <table class="instructions-row">
+        <tr>
+          <td class="instructions-number">1</td>
+          <td class="instructions-text">Behind one of these doors is the WeirdBot.</td>
+        </tr>
+
+        <tr>
+          <td class="instructions-number">2</td>
+          <td class="instructions-text">Your mission is to open vacation doors without seeing Bot.</td>
+        </tr>
+
+        <tr>
+          <td class="instructions-number">3</td>
+          <td class="instructions-text">If you manage to avoid the Bot until you open the very last door, you win!</td>
+        </tr>
+
+        <tr>
+          <td class="instructions-number">4</td>
+          <td class="instructions-text">Find out if you can score a winning streak!</td>
+        </tr>
+      </table>
+      <img src="./Star.svg" alt="star" class="star">
+      <p class="instruction-title">
+        Instructions</p>
+      <img src="./Star.svg" alt="star" class="star">
+    </div>
+
+    <div class="door-row">
+      <div id="start" class="start-row">Good Luck!</div>
+      <img id="door1" class="door-frame" src="./closed_door.svg" alt="door_close">
+      <img id="door2" class="door-frame"  src="./closed_door.svg" alt="door_close">
+      <img id="door3" class="door-frame" src="./closed_door.svg" alt="door_close">
+    </div>
+
+    <table class="score-row">
+      <tr>
+        <th class="score-text">Current Streak:</th>
+        <th class="score-text">Best Streak:</th>
+      </tr>
+      <tr>
+        <th id="score-number" class="score-box"></th>
+        <th id="high-score-number" class="score-box"></th>
+      </tr> 
+    </table>
+  
+
+    <div class="container">
+      <div class="custom-menu">background
+        <button type="button" id="bg-button-1">blue</button>
+        <button type="button" id="bg-button-2">coral</button> 
+        <button type="button" id="bg-button-3">violet</button> 
+        <button type="button" id="bg-button-4">greenery</button> 
+        <button type="button" id="bg-button-5">rose</button>
+        <button type="button" id="bg-button-6">serenity</button> 
+        <button type="button" id="bg-button-7">marsala</button>
+        <button type="button" id="bg-button-8">default</button>
+      </div>
+
+      <div class="custom-menu">header
+        <button type="button" id="hd-button-1">navy</button>
+        <button type="button" id="hd-button-2">aqua</button> 
+        <button type="button" id="hd-button-3">teal</button> 
+        <button type="button" id="hd-button-4">purple</button> 
+        <button type="button" id="hd-button-5">fuchsia</button>
+        <button type="button" id="hd-button-6">maroon</button> 
+        <button type="button" id="hd-button-7">olive</button>
+        <button type="button" id="hd-button-8">default</button>
+      </div>
+
+      <div class="custom-menu">good luck box
+        <button type="button" id="box-button-1">ice cold</button>
+        <button type="button" id="box-button-2">freeze purple</button>
+        <button type="button" id="box-button-3">blue green</button>
+        <button type="button" id="box-button-4">dusty white</button> 
+        <button type="button" id="box-button-5">pink sand</button> 
+        <button type="button" id="box-button-6">default</button> 
+        
+      </div>
+    </div>
+    <button id="first" type="submit">call AJAX</button>
+    <div class="container-1">
+      <div>Christmas joke:
+          <p id="ajax-1"></p>
+      </div>
+      <div>Year fact:
+          <p id="ajax-2"></p>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div>Activity suggestion:
+          <p id="ajax-3"></p>
+      </div>
+      <div>Math number fact:
+          <p id="ajax-4"></p>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  </body>
+</html>
